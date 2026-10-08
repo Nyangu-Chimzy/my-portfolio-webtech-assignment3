@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyangu Mubanga - My Student Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Nyangu Mubanga</h1>
+    <p>Computer Science Student | 2nd Year</p>
+    <button id="themeBtn" type="button">Dark mode</button>
+<button id="menuBtn" type="button" aria-expanded="false">Menu</button>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#learning-plan">My Learning Plan</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a><a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN Web Docs (Learn Web Development)</a>
+  </nav>
+
+  <main><section id="hero">
+  <h2>Hi, I'm Nyangu</h2>
+  <p>Computer Science student at Mulungushi University. Welcome to my portfolio!</p>
+  <a class="btn" href="#projects">View My Projects</a>
+</section>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        My name is Nyangu Mubanga, and I am a second-year Computer Science student at Mulungushi University.
+        I have always been curious about how technology works, and studying computer science has helped me
+        understand both the logical and creative sides of building software. Outside of my coursework, I enjoy
+        reading, trying new things, and shopping, which help me relax and stay balanced while I study. I am
+        currently learning web technologies, and I am excited to build my skills in HTML, CSS, and eventually
+        JavaScript so that I can design and develop my own websites and applications in the future.
+      </p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Reading</li>
+        <li>Trying new things</li>
+        <li>Shopping</li>
+      </ul>
+    </section>
+
+    <section id="learning-plan" class="content-section">
+      <h2>My Learning Plan</h2>
+      <p>Here are the steps I plan to take to improve my web development skills:</p>
+      <ol>
+        <li>Practice writing HTML and CSS every day for at least 30 minutes.</li>
+        <li>Build small practice projects, such as a personal portfolio and a simple form.</li>
+        <li>Learn the basics of JavaScript to make my web pages interactive.</li>
+      </ol>
+
+      <table>
+        <caption>Weekly Web Learning Plan</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Practice Task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML Basics</td>
+            <td>Build a simple page structure with headings and paragraphs</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS Styling</td>
+            <td>Style a page with colors, fonts, and spacing</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Forms and Tables</td>
+            <td>Create a contact form and a data table</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <p>A few photos of myself and things I enjoy.</p>
+
+      <figure>
+        <img src="images/photo1.jpg" alt="A photo of me, Nyangu Mubanga">
+        <figcaption>This is me.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/photo2.jpg" alt="A photo showing me reading a book">
+        <figcaption>Reading is one of my favorite hobbies.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/photo3.jpg" alt="A photo related to shopping">
+        <figcaption>I enjoy shopping in my free time.</figcaption>
+      </figure>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <h3>Introduction Video</h3>
+      <video controls width="400">
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p><strong>Summary:</strong> In this video, I introduce myself as Nyangu Mubanga, a second-year Computer
+      Science student, and share one web skill I hope to learn.</p>
+
+      <h3>Audio Clip</h3>
+      <audio controls>
+        <source src="videos/voice.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p>In this recording, I talk about one of my hobbies, reading, and why I enjoy it.</p>
+    </section>
+<section id="projects" class="content-section">
+  <h2>My Projects and Skills</h2>
+  <div class="project-card">
+    <h3>HTML Basics</h3>
+    <p>I learned how to structure a web page using headings, paragraphs, lists, tables, images and links.</p>
+    <button class="toggle-btn" type="button" aria-expanded="false">Show details</button>
+<p class="details" hidden>HTML gives a web page its structure, like the walls of a house.</p>
+  </div>
+  <div class="project-card">
+    <h3>CSS Styling</h3>
+    <p>I learned how to add colours, spacing and layouts so my pages look neat on phones and computers.</p>
+    <button class="toggle-btn" type="button" aria-expanded="false">Show details</button>
+<p class="details" hidden>CSS controls how the page looks, like the paint and furniture.</p>
+  </div>
+  <div class="project-card">
+    <h3>JavaScript</h3>
+    <p>I am learning how to make my page react to clicks and form input, like checking if an email is valid.</p>
+    <button class="toggle-btn" type="button" aria-expanded="false">Show details</button>
+<p class="details" hidden>JavaScript makes the page respond when someone clicks or types.</p>
+  </div>
+</section>
+
+        </select><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+<section id="contact" class="content-section">
+  <h2>Contact</h2>
+  <p>Browser demonstration only — no message is sent.</p>
+  <form id="contactForm" novalidate>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <span class="error" id="nameError"></span>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <span class="error" id="emailError"></span>
+
+    <label for="topic">Topic:</label>
+    <select id="topic">
+      <option>General Inquiry</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="4" required></textarea>
+    <span class="error" id="messageError"></span>
+
+    <button type="submit">Check Message</button>
+  </form>
+  <div id="formResult" aria-live="polite"></div>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nyangu Mubanga. All rights reserved.</p>
+    <a href="https://github.com/Nyangu-Chimzy/YOUR-REPO">View Source on GitHub</a>
+  </footer>
+
+</body>
+</html>
